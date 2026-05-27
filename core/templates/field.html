@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ title }}</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #0b1c2c;
+            color: white;
+            text-align: center;
+        }
+
+        .container {
+            margin-top: 100px;
+        }
+
+        .card {
+            background: #112f4a;
+            padding: 30px;
+            border-radius: 15px;
+            width: 60%;
+            margin: auto;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #1da1f2;
+            color: white;
+            border-radius: 10px;
+            text-decoration: none;
+        }
+
+        a:hover {
+            background: #0d8ddb;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="card">
+        <h1>{{ title|title }}</h1>
+        <p>{{ description }}</p>
+
+        <a href="{% url 'home' %}">⬅ رجوع للرئيسية</a>
+    </div>
+</div>
+
+</body>
+</html>
